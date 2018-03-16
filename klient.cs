@@ -64,7 +64,7 @@ namespace ConsoleApplication3
         public void reWrite()
         {
             Console.WriteLine("Имя: {0}\nПол: {1}\nИнформация в чеке {2}", Name, Gender,Klientsiy_Ticket);
-            Console.WriteLine("Возраст: {0}", Age);
+            Console.WriteLine("Возраст: {0}\n", Age);
         }
 
 

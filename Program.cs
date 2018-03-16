@@ -24,9 +24,28 @@ namespace ConsoleApplication3
             klient ex1 = new klient("Анна", "Муж", exe1, 18);
             ex1.reWrite();
 
-            WorkInventory win1 = new WorkInventory("2004-05-23", 5, "Рабочий инвентарь", "Дебилов Д.Д.", "Только для клиентов");
-            win1.reWriteWorkInventory();
+            WorkInventory win1 = new WorkInventory("2004-05-23", 5, "Рабочий инвентарь", "Дебилов Д.Д.", "Только для клиентов");  
+            SnowboardInventory sin1 = new SnowboardInventory("2004-05-23", 50, "Прокатный инвентарь", 155, "Camber");
+           
+            List<Inventory> ListInventory = new List<Inventory>();
 
+            ListInventory.Add(win1);
+            ListInventory.Add(sin1);
+
+
+            foreach (Inventory i in ListInventory)
+            {
+                if (i is WorkInventory)
+                {
+                    (i as WorkInventory).reWriteWorkInventory();
+                }
+                else if (i is SnowboardInventory)
+                {
+                    (i as SnowboardInventory).reWriteSnowboardInventory();
+                }
+                else i.reWriteInventory();
+                
+            }
 
             Console.ReadLine();
         }
