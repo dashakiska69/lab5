@@ -24,6 +24,8 @@ namespace ConsoleApplication3
             klient ex1 = new klient("Анна", "Муж", exe1, 18);
             ex1.reWrite();
 
+            WorkInventory win1 = new WorkInventory("2004-05-23", 5, "Рабочий инвентарь", "Дебилов Д.Д.", "Только для клиентов");
+            win1.reWriteWorkInventory();
 
 
             Console.ReadLine();

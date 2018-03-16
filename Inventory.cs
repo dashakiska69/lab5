@@ -8,7 +8,7 @@ namespace ConsoleApplication3
 {
     class Inventory //Общий класс
     {
-        public DateTime data_post //Дата поступления инвентаря
+        public string data_post //Дата поступления инвентаря
         {
             get; set;
         }
@@ -22,7 +22,7 @@ namespace ConsoleApplication3
         }
 
         //Конструктор
-        public Inventory(DateTime data_post, int srok_god, string type)
+        public Inventory(string data_post, int srok_god, string type)
         {
             this.data_post = data_post;
             this.srok_god = srok_god;
