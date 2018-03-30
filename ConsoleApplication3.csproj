@@ -50,6 +50,7 @@
     <Compile Include="SnowboardInventory.cs" />
     <Compile Include="Ticket.cs" />
     <Compile Include="WorkInventory.cs" />
+    <Compile Include="WorkInventoryForClients.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

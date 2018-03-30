@@ -8,14 +8,16 @@ namespace ConsoleApplication3
 {
     class WorkInventory : Inventory
     {
-        public string Otv_lico //Ответственное лицо
+        //Виртуальное свойство
+        public virtual string Otv_lico //Ответственное лицо
         {
             get; set;
         }
-        public string dostup //Список доступных лиц
+        public virtual string dostup //Список доступных лиц
         {
             get; set;
         }
+        //
 
         public WorkInventory(string data_post, int srok_god, string type, string Otv_lico, string dostup): base(data_post,srok_god,type)
         {
@@ -35,6 +37,7 @@ namespace ConsoleApplication3
             // Используется ссылка на метод, определенный в базовом классе Inventory
             return base.InventoryInfo(obj) + "Ответственное лицо: " + Otv_lico + "Доступ" + dostup + "\n";
         }
+
 
     }
 }
