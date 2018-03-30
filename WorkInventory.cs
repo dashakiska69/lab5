@@ -32,10 +32,10 @@ namespace ConsoleApplication3
         }
 
         // Переопределение для виртуального метода
-        public override string InventoryInfo(Inventory obj)
+        public override string InventoryInfo()
         {
             // Используется ссылка на метод, определенный в базовом классе Inventory
-            return base.InventoryInfo(obj) + "\nОтветственное лицо: " + Otv_lico + "\nДоступ: " + dostup + "\n";
+            return base.InventoryInfo() + "\nОтветственное лицо: " + Otv_lico + "\nДоступ: " + dostup + "\n";
         }
 
 

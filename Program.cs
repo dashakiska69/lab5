@@ -48,13 +48,13 @@ namespace ConsoleApplication3
              }
              */
             WorkInventory workint1 = new WorkInventory("66/66/6666", 66, "Рабочий инвентарь", "Дебилов Д.Д.", "Для клиентов");
-            Console.WriteLine(workint1.InventoryInfo(workint1));
+            Console.WriteLine(workint1.InventoryInfo());
 
 
             
 
             WorkInventoryForClients workintklients1 = new WorkInventoryForClients("14/88/6969", 99, "Рабочий инвентарь", "Хрюшкин Х.Й.", "Только для клиентов", "6+", "Не брать в рот");
-            Console.WriteLine(workintklients1.InventoryInfo(workintklients1));
+            Console.WriteLine(workintklients1.InventoryInfo());
 
             Console.ReadLine();
         }

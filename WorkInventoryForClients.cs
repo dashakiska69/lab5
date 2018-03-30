@@ -23,10 +23,10 @@ namespace ConsoleApplication3
             this.safety_regulations = safety_regulations;
         }
         //Переопределяем виртуальный метод
-        public override string InventoryInfo(Inventory obj)
+        public override string InventoryInfo()
         {
             //Ccskrf yf vtnjl jghtltktyysq d ghjbpdjlyjv rkfcct ЦщклШтмутещкн
-            return base.InventoryInfo(obj) + "\nДопустимый возвраст: " + dopusk_age + "\nПравила безопасности: " + safety_regulations + "\n\n";
+            return base.InventoryInfo() + "\nДопустимый возвраст: " + dopusk_age + "\nПравила безопасности: " + safety_regulations + "\n\n";
         }
     }
 }
