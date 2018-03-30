@@ -28,5 +28,13 @@ namespace ConsoleApplication3
         {
             Console.WriteLine("Дата поступления: {0}\nСрок годности: {1}\nТип инвентаря {2}\nОтветственное лицо: {3}\nДоступ: {4}\n", data_post, srok_god, type, Otv_lico, dostup);
         }
+
+        // Переопределение для виртуального метода
+        public override string InventoryInfo(Inventory obj)
+        {
+            // Используется ссылка на метод, определенный в базовом классе Inventory
+            return base.InventoryInfo(obj) + "Ответственное лицо: " + Otv_lico + "Доступ" + dostup + "\n";
+        }
+
     }
 }
