@@ -37,7 +37,7 @@ namespace ConsoleApplication3
         //Виртуальный метод
        public virtual string InventoryInfo(Inventory obj)
         {
-            string s = "Информация об инвентаре: \n---------------------------\n\n" + "Дата поступления: " + data_post +  "Срок годности:" + srok_god + "Тип иневентаря" + type + "\n";
+            string s = "Информация об инвентаре: \n---------------------------\n" + "\nДата поступления: " + data_post + "\nСрок годности: " + srok_god + "\nТип иневентаря: " + type;
             return s;
         }
 

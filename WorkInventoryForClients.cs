@@ -13,6 +13,20 @@ namespace ConsoleApplication3
         {
             get; set;
         }
-
+        public string safety_regulations //Правила безопасности
+        {
+            get; set;
+        }
+        public WorkInventoryForClients(string data_post, int srok_god, string type, string Otv_lico, string dostup, string dopusk_age, string safety_regulations) : base(data_post, srok_god, type,Otv_lico ,dostup)
+        {
+            this.dopusk_age = dopusk_age;
+            this.safety_regulations = safety_regulations;
+        }
+        //Переопределяем виртуальный метод
+        public override string InventoryInfo(Inventory obj)
+        {
+            //Ccskrf yf vtnjl jghtltktyysq d ghjbpdjlyjv rkfcct ЦщклШтмутещкн
+            return base.InventoryInfo(obj) + "\nДопустимый возвраст: " + dopusk_age + "\nПравила безопасности: " + safety_regulations + "\n\n";
+        }
     }
 }

@@ -35,7 +35,7 @@ namespace ConsoleApplication3
         public override string InventoryInfo(Inventory obj)
         {
             // Используется ссылка на метод, определенный в базовом классе Inventory
-            return base.InventoryInfo(obj) + "Ответственное лицо: " + Otv_lico + "Доступ" + dostup + "\n";
+            return base.InventoryInfo(obj) + "\nОтветственное лицо: " + Otv_lico + "\nДоступ: " + dostup + "\n";
         }
 
 
