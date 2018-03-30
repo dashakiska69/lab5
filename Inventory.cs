@@ -34,5 +34,11 @@ namespace ConsoleApplication3
             Console.WriteLine("Дата поступления: {0}\nСрок годности: {1}\nТип инвентаря {2}\n", data_post, srok_god, type);
         }
 
+       public virtual string InventoryInfo(Inventory obj)
+        {
+            string data_post = "Дата поступления: " + "Срок годности:" + srok_god + "Тип иневентаря" + type + "\n";
+            return data_post;
+        }
+
     }
 }
